@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "My personal webportal!",
   "author": "Denperidge",
-  "main": "docs/index.js",
   "scripts": {
     "build": "npx parcel build app/index.pug --dist-dir build/",
     "dev": "npx parcel app/index.pug --dist-dir build/",

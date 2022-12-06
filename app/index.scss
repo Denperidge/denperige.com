@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Karma';
+    src: url(font/Karma-Regular.ttf) format('truetype');
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Karma', serif;
+    background-color: #F8F5A3;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 60%;
+    height: 40%;
+    
+    display: flex;
+
+    section {
+        flex-grow: 2;
+        
+        img {
+            width: 40%;
+        }
+
+    }
+    nav {
+        flex-grow: 1;
+    }
+
+}
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        section {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

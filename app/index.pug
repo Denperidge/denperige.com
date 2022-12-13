@@ -8,25 +8,31 @@ html(lang="en")
         link(rel="stylesheet", href="index.scss")
     body
         main
-            section
+            aside
                 img(src="https://github.com/Denperidge.png" alt="Denperidge's profile picture")
                 h1 Hi! I'm Denperidge!
                 span This webportal is still under construction but I at least wanted to have the links together you know 
-            nav You can find me in a few places:
-                ul 
-                    span I'm mainly active on !{' '}
-                    a(href="https://github.com/Denperidge") GitHub
-                ul 
-                    span And I have a resume on !{' '}
-                    a(href="https://resume.denperidge.com") resume.denperidge.com
-                    span  (although I'm not looking for work right now)
-                ul
-                    span You should be able to find an occasional contribution of mine on both !{' '} 
-                    a(href="https://gitlab.com/Denperidge") GitLab
-                    span ...
-                ul
-                    span ... as well as on !{' '} 
-                    a(href="https://codeberg.org/Denperidge") Codeberg
-                    span !
+            section
+                nav You can find me in a few places:
+                    ul
+                        p #{data}
+                        p #{nav}
+                    ul 
+                        span I'm mainly active on !{' '}
+                        a(href="https://github.com/Denperidge") GitHub
+                    ul 
+                        span And I have a resume on !{' '}
+                        a(href="https://resume.denperidge.com") resume.denperidge.com
+                        span  (although I'm not looking for work right now)
+                    ul
+                        span You should be able to find an occasional contribution of mine on both !{' '} 
+                        a(href="https://gitlab.com/Denperidge") GitLab
+                        span ...
+                    ul
+                        span ... as well as on !{' '} 
+                        a(href="https://codeberg.org/Denperidge") Codeberg
+                        span !
+                a(href="../data.json") JSON
+            
 </body>
 </html>

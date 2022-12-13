@@ -14,9 +14,12 @@ html(lang="en")
                 span This webportal is still under construction but I at least wanted to have the links together you know 
             section
                 nav You can find me in a few places:
-                    ul
-                        p #{data}
-                        p #{nav}
+                    ul 
+                        each nav in data.nav
+                            li
+                                - let description = nav.description.replace(nav.name, `<a href="${nav.url}">${nav.name}</a>`);
+                                span !{description}
+
                     ul 
                         span I'm mainly active on !{' '}
                         a(href="https://github.com/Denperidge") GitHub

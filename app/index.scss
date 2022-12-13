@@ -38,6 +38,13 @@ main {
     }
 
 }
+
+ul {
+    li {
+        margin-bottom: 16px;
+    }
+}
+
 @media (max-width: 800px) {
     main {
         flex-direction: column;

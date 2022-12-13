@@ -17,24 +17,12 @@ html(lang="en")
                     ul 
                         each nav in data.nav
                             li
-                                - let description = nav.description.replace(nav.name, `<a href="${nav.url}">${nav.name}</a>`);
+                                - 
+                                    let description;
+                                    if (nav.url) description = nav.description.replace(nav.name, `<a href="${nav.url}">${nav.name}</a>`);
+                                    else description = nav.description
                                 span !{description}
-
-                    ul 
-                        span I'm mainly active on !{' '}
-                        a(href="https://github.com/Denperidge") GitHub
-                    ul 
-                        span And I have a resume on !{' '}
-                        a(href="https://resume.denperidge.com") resume.denperidge.com
-                        span  (although I'm not looking for work right now)
-                    ul
-                        span You should be able to find an occasional contribution of mine on both !{' '} 
-                        a(href="https://gitlab.com/Denperidge") GitLab
-                        span ...
-                    ul
-                        span ... as well as on !{' '} 
-                        a(href="https://codeberg.org/Denperidge") Codeberg
-                        span !
+                                
                 a(href="../data.json") JSON
             
 </body>

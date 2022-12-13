@@ -4,6 +4,25 @@
             "name": "GitHub",
             "url": "https://github.com/Denperidge",
             "description": "I'm mainly active on GitHub"
+        },
+        {
+            "name": "resume.denperidge.com",
+            "url": "https://resume.denperidge.com/",
+            "description": "And I have a resume on resume.denperidge.com (although I'm not looking for work right now)"
+        },
+        {
+            "name": "GitLab",
+            "url": "https://gitlab.com/Denperidge",
+            "description": "You should be able to find an occasional contribution of mine on both GitLab..."
+        },
+        {
+            "name": "Codeberg",
+            "url": "https://codeberg.org/Denperidge",
+            "description": "... as well as on Codeberg!"
+        },
+        {
+            "name": "LinkedIn",
+            "description": "(Oh, I also have a LinkedIn! But I give that out on request.)"
         }
     ]
 }

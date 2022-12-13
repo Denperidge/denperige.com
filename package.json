@@ -6,6 +6,7 @@
   "scripts": {
     "build": "npx parcel build app/index.pug --dist-dir build/",
     "dev": "npx parcel app/index.pug --dist-dir build/",
+    "dev-nocache": "npx parcel app/index.pug --dist-dir build/ --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
 
   },
